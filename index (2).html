@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Profil Ryan</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background: linear-gradient(-45deg,#78c7ec,#58f9be,#e1ab49,#bbe553);
+background-size:400% 400%;
+animation:gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.card{
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(10px);
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+text-align:center;
+width:320px;
+color:white;
+animation:fade 1.5s ease;
+}
+
+@keyframes fade{
+from{opacity:0; transform:translateY(30px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+img{
+width:130px;
+height:160px;
+border-radius:0%;
+object-fit:cover;
+border:4px solid white;
+margin-bottom:15px;
+}
+
+h1{
+margin-bottom:10px;
+}
+
+p{
+margin:5px 0;
+}
+
+button{
+margin-top:15px;
+padding:12px 25px;
+border:none;
+border-radius:25px;
+background:white;
+color:#333;
+font-size:15px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.1);
+box-shadow:0 0 15px white;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<img src="foto.jpg">
+
+<h1>Ryan</h1>
+
+<p>Mahasiswa Teknik Komputer</p>
+<p>Telkom University</p>
+<p>Umur 21 Tahun</p>
+
+<a href="https://www.instagram.com/irsyadphlvy" target="_blank">
+<button>Instagram</button>
+</a>
+
+</div>
+
+</body>
+</html>
